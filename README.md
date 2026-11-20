@@ -45,3 +45,14 @@ make psql
 | Lab | Description | Runnable Script |
 | :--- | :--- | :--- |
 | **Transactional Outbox** | Eliminating the Dual-Write bug by atomically committing business entities and outbox events, consumed via `SKIP LOCKED`. | `database/distributed/01-transactional-outbox/` |
+
+---
+
+### 4. Networking Essentials & Protocols
+| Lab | Description | Runnable Script |
+| :--- | :--- | :--- |
+| **Stateful TCP vs Stateless UDP** | Inspecting OS kernel socket states (`LISTEN`, `ESTABLISHED`) vs UDP's lack of connection state with `lsof` and `nc`. | `network-essentials/01-stateful-tcp-vs-stateless-udp/` |
+| **Raw HTTP with Netcat** | Sending RFC 7230 GET/POST requests by piping raw text into `nc`, and proving persistent socket reuse with `keep-alive`. | `network-essentials/02-raw-http-with-netcat/` |
+| **Stateful Sockets & Thundering Herd** | Multi-client broadcast server demonstrating in-memory connection state, horizontal scaling hurdles, and reconnection storms. | `network-essentials/03-stateful-chat-and-failover/` |
+| **Port Scanning & Diagnostics** | Learning the difference between `Connection Refused` (TCP RST) vs `Connection Timed Out` (packet drops). | `network-essentials/04-port-scanning-and-diagnostics/` |
+| **NAT Traversal & Hole Punching** | Simulating how WebRTC bypasses home router firewalls using STUN and UDP hole punching. | `network-essentials/05-nat-and-hole-punching/` |

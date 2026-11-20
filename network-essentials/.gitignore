@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Packet Captures & Network Dumps
+*.pcap
+*.pcapng
+*.cap
+
+# Logs and runtime files
+*.log
+*.pid
+*.tmp
+*.swp
+*.swo
+*~
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
