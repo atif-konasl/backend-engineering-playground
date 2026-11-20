@@ -22,6 +22,7 @@ On macOS, `nc` (Netcat), `curl`, `lsof`, and `python3` are already installed.
 | **03. Stateful Sockets & Thundering Herd** | Run a multi-client TCP chat room, experience in-memory connection siloing, and simulate a 30-client reconnection storm when a stateful server crashes. | [`03-stateful-chat-and-failover/`](./03-stateful-chat-and-failover/) |
 | **04. Port Scanning & Network Diagnostics** | Learn the critical difference between `Connection Refused` (TCP RST) and `Connection Timed Out` (Firewall packet drop). | [`04-port-scanning-and-diagnostics/`](./04-port-scanning-and-diagnostics/) |
 | **05. NAT Traversal & UDP Hole Punching** | Demystify why WebRTC P2P fails behind NAT routers, observe unsolicited firewall drops, and see STUN hole punching in action. | [`05-nat-and-hole-punching/`](./05-nat-and-hole-punching/) |
+| **06. Client-Side Load Balancing & DNS** | Zero-hop direct routing (gRPC / Redis Cluster style) and the DNS Round-Robin TTL caching dilemma. | [`load-balancing/`](./load-balancing/) |
 
 ---
 
@@ -61,4 +62,10 @@ On macOS, `nc` (Netcat), `curl`, `lsof`, and `python3` are already installed.
    ```bash
    cd 05-nat-and-hole-punching
    python3 simulate_nat_traversal.py
+   ```
+
+6. **Test Client-Side Load Balancing & DNS:**
+   ```bash
+   cd load-balancing
+   python3 run_demo.py
    ```

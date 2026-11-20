@@ -56,3 +56,4 @@ make psql
 | **Stateful Sockets & Thundering Herd** | Multi-client broadcast server demonstrating in-memory connection state, horizontal scaling hurdles, and reconnection storms. | `network-essentials/03-stateful-chat-and-failover/` |
 | **Port Scanning & Diagnostics** | Learning the difference between `Connection Refused` (TCP RST) vs `Connection Timed Out` (packet drops). | `network-essentials/04-port-scanning-and-diagnostics/` |
 | **NAT Traversal & Hole Punching** | Simulating how WebRTC bypasses home router firewalls using STUN and UDP hole punching. | `network-essentials/05-nat-and-hole-punching/` |
+| **Client-Side Load Balancing & DNS** | Zero-hop direct routing (gRPC / Redis Cluster style) and the DNS Round-Robin TTL caching dilemma. | `network-essentials/load-balancing/` |
